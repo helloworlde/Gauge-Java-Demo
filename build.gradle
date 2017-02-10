@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: 'gauge'
+
+group = "gauge-example-java"
+version = "1.0.0"
+
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:+'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            'com.thoughtworks.gauge:gauge-java:+',
+            'junit:junit:4.12',
+            'org.seleniumhq.selenium:selenium-chrome-driver:3.0.1',
+            'org.seleniumhq.selenium:selenium-support:3.0.1',
+            'org.seleniumhq.selenium:selenium-edge-driver:3.0.1',
+            'org.seleniumhq.selenium:selenium-ie-driver:3.0.1',
+            'org.seleniumhq.selenium:selenium-firefox-driver:3.0.1'
+    )
+}
+
+gauge {
+    specsDir = 'specs'
+}
