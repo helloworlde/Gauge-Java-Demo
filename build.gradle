@@ -37,4 +37,5 @@ dependencies {
 
 gauge {
     specsDir = 'specs'
+    env = 'chrome'
 }
