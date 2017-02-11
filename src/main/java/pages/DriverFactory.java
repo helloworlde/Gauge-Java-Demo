@@ -5,8 +5,6 @@ import com.thoughtworks.gauge.BeforeSuite;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
-
 
 /**
  * Created by viche on 2/10/2017.
@@ -39,7 +37,7 @@ public class DriverFactory {
         if (browser.toLowerCase().equals(FIREFOX)) {
 //            driver = new FirefoxDriver();
         } else if (browser.toLowerCase().equals(CHROME)) {
-            System.setProperty(DRIVERNAME,DRIVERPATH);
+            System.setProperty(DRIVERNAME, DRIVERPATH);
             driver = new ChromeDriver();
         } else {
 //            driver = new InternetExplorerDriver();

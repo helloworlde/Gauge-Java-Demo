@@ -5,7 +5,7 @@ import pages.MainPage;
 
 public class QueryUser {
 
-    private final WebDriver driver= DriverFactory.getDriver();
+    private final WebDriver driver = DriverFactory.getDriver();
 
 //    public QueryUser(WebDriver driver) {
 //        this.driver = pages.DriverFactory.getDriver();
