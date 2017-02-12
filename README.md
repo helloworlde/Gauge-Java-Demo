@@ -1,5 +1,5 @@
 # Gauge-Java-Demo
-This is a project of [Gauge](http://getgauge.io) of JavaWeb and build by [Gradle](http://gradle.org). For  test database,request and page operation automation of a [SpringBoot application](https://github.com/helloworlde/SpringBoot-Demo).This application can download here.
+This is a project of [Gauge](http://getgauge.io) of JavaWeb and build by [Gradle](http://gradle.org). For  test database,request and page operation automation of a [SpringBoot application](https://github.com/helloworlde/SpringBoot-Demo).
 
 
 ## Running this example
@@ -17,7 +17,7 @@ This example requires the following softwares to run.
   
 ### Setting up the System Under Test (SUT)
 
-* Download SpringBootDemo.jar
+* Download [SpringBootDemo.jar](https://github.com/helloworlde/SpringBoot-Demo/blob/master/SpringBootDemo.jar) file
 * Bring up the SUT by executing the below command
 ```
 java -jar SpringBootDemo.jar
@@ -28,29 +28,38 @@ java -jar SpringBootDemo.jar
 
 If you already have Gradle installed, you can execute specs as `gradle specs`. Otherwise, you can use the gradle wrapper and run specs as below:
 
-#### On Linux / Mac
+### On Linux / Mac
 
 ```
 ./gradlew gauge
 ```
 
-#### On Windows
+### On Windows
 
 ```
 gradlew.bat gauge
 ```
 This runs Gauge specs with [Gradle](http://gradle.org).
 
-This uses Chrome as default browser for specs execution. Make sure Chrome and [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) is installed.
+This uses Chrome as default browser for specs execution. Make sure your Chrome and [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) is comparable.
 
 
 
-####If you want to use Firefox/IE or others browser  
 
- - Edit build.gradle file and change env to what you wanted browser name
- - Then change configuration file under env, edit `BROWSER`, `drivername`, `driverpath` with comparable,
+###If you want to use Firefox/IE or other browser  
+
+ - Edit build.gradle file and change env to what you wanted browser name which in env folder
  
- Make sure comparable [WebDriver](http://www.seleniumhq.org/download/) is installed
+ 
+ Make sure [WebDriver](http://www.seleniumhq.org/download/) under env folder is comparable with your browser, if not, you need to replace it.
+
+##WebDriver download
+* [IE WebDriver](http://selenium-release.storage.googleapis.com/index.html)
+* [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+* [Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
+* Others you can find in[http://www.seleniumhq.org/download/](http://www.seleniumhq.org/download/) mostly
+
+
 
 --------------------------
 
