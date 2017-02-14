@@ -9,3 +9,7 @@ reports/
 *.log
 /.gradle/
 /.idea/
+workspace.xml
+Default.xml
+
+gauge_bin/
