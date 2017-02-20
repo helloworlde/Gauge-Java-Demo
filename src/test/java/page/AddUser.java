@@ -1,3 +1,5 @@
+package page;
+
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.Table;
 import com.thoughtworks.gauge.TableRow;
@@ -33,7 +35,6 @@ public class AddUser {
     @Step("check add result <table>")
     public void checkAddUser(Table table) {
         mainPage.query();
-
         for (TableRow row : table.getTableRows()) {
             mainPage.queryByUsername(row.getCell("username").toString());
         }

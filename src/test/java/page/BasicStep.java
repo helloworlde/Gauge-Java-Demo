@@ -1,3 +1,5 @@
+package page;
+
 import com.thoughtworks.gauge.Step;
 import org.openqa.selenium.WebDriver;
 import pages.MainPage;

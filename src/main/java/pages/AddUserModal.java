@@ -42,7 +42,6 @@ public class AddUserModal extends BasePage {
             usernames.add(row.getCell("username"));
             addUsername.sendKeys(row.getCell("username"));
             sexSelect.selectByValue(row.getCell("sex"));
-//            sexSelect.selectByVisibleText(row.getCell("sex"));
             addAge.sendKeys(row.getCell("age"));
             schoolSelect.selectByValue(row.getCell("school"));
             majorSelect.selectByValue(row.getCell("major"));

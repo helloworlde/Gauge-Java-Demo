@@ -9,7 +9,6 @@ import utils.DriverFactory;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author HelloWood
@@ -31,12 +30,18 @@ public class MainPage extends BasePage {
     public List<WebElement> userInfoTrs;
     public List<WebElement> tdUsernames;
 
+
     public void query() {
         btnQueryUser.click();
 
-        //for wait query user info from server
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //show all data after query
+        WebElement btnShowAllData = driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div/div/div/button[4]"));
+        btnShowAllData.click();
         //print all data after queryed
         userInfoTrs = driver.findElements(By.name("trUserinfo"));
         for (WebElement tr : userInfoTrs) {
