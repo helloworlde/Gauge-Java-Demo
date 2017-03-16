@@ -46,14 +46,14 @@ This uses Chrome as default browser for specs execution. Make sure your Chrome a
 
 
 
-###If you want to use Firefox/IE or other browser  
+### If you want to use Firefox/IE or other browser  
 
  - Edit build.gradle file and change env to what you wanted browser name which in env folder
  
  
  Make sure [WebDriver](http://www.seleniumhq.org/download/) under env folder is comparable with your browser, if not, you need to replace it.
 
-##WebDriver download
+## WebDriver download
 * [IE WebDriver](http://selenium-release.storage.googleapis.com/index.html)
 * [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 * [Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
